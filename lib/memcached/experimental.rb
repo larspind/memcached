@@ -11,6 +11,7 @@ class Memcached
       tries ||= 0
       raise unless tries < options[:exception_retry_limit] && should_retry(e)
       tries += 1
+      sleep(options[:exception_retry_delay] || 5)
       retry
     end
 
@@ -41,6 +42,7 @@ class Memcached
       tries ||= 0
       raise unless tries < options[:exception_retry_limit] && should_retry(e)
       tries += 1
+      sleep(options[:exception_retry_delay] || 5)
       retry
     end
 
