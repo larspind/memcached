@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Evan Weaver}]
-  s.cert_chain = [%q{/Users/eweaver/p/configuration/gem_certificates/evan_weaver-original-public_cert.pem}]
   s.date = %q{2011-10-10}
   s.description = %q{An interface to the libmemcached C client.}
   s.email = %q{}
@@ -18,7 +17,6 @@ Gem::Specification.new do |s|
   s.require_paths = [%q{lib}, %q{ext}]
   s.rubyforge_project = %q{fauna}
   s.rubygems_version = %q{1.8.6}
-  s.signing_key = %q{/Users/eweaver/p/configuration/gem_certificates/evan_weaver-original-private_key.pem}
   s.summary = %q{An interface to the libmemcached C client.}
   s.test_files = [%q{test/test_helper.rb}, %q{test/unit/binding_test.rb}, %q{test/unit/memcached_experimental_test.rb}, %q{test/unit/memcached_test.rb}, %q{test/unit/rails_test.rb}]
 
